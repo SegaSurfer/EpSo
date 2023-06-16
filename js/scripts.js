@@ -8,19 +8,19 @@
 
 let config = '{ "Weapons" : [' +
 '{ "image":"sword_clash.png" , "sound":"sword_clash.mp3" },' +
-'{ "image":"musket.png" , "sound":"musket.mp3" },' +
+'{ "image":"musket.PNG" , "sound":"musket.mp3" },' +
 '{ "image":"crossbow_shot.png" , "sound":"crossbow_shot.wav" },' +
-'{ "image":"gun_revolver_pistol.png" , "sound":"gun_revolver_pistol.wav" },' +
+'{ "image":"gun_revolver_pistol.PNG" , "sound":"gun_revolver_pistol.wav" },' +
 '{ "image":"weapon_nature_vines_tree_impact.PNG" , "sound":"weapon_nature_vines_tree_impact.wav" }' +
 '], '+
 '"Nature" : [' +
-'{ "image":"thunder.png" , "sound":"thunder.wav" },' +
+'{ "image":"thunder.PNG" , "sound":"thunder.wav" },' +
 '{ "image":"Nature_(elemental).png" , "sound":"Nature_(elemental).mp3" }' +
 '],' +
 '"Background" : [' +
 '{ "image":"horror_background.png" , "sound":"horror_background.m4a" },' +
 '{ "image":"horror_background_sanft.png" , "sound":"horror_background_sanft.m4a" },' +
-'{ "image":"battle_background.png" , "sound":"battle_background.wav" },' +
+'{ "image":"battle_background.PNG" , "sound":"battle_background.wav" },' +
 '{ "image":"battle_background_epicer.png" , "sound":"battle_background_epicer.wav" },' +
 '{ "image":"battle_For_The_Assault.png" , "sound":"battle_For_The_Assault.wav" },' +
 '{ "image":"Battle_Night_Siege.png" , "sound":"Battle_Night_Siege.wav" },' +
@@ -28,9 +28,9 @@ let config = '{ "Weapons" : [' +
 '{ "image":"music_Country_Market.png" , "sound":"music_Country_Market.m4a" }' +
 '], '+
 '"Overlay" : [' +
-'{ "image":"overlay_rain.PNG" , "sound":"overlay_rain.wav" },' +
+'{ "image":"overlay_rain.png" , "sound":"overlay_rain.wav" },' +
 '{ "image":"overlay_bird_crows.PNG" , "sound":"overlay_bird_crows.wav" },' +
-'{ "image":"overlay_fly_buzz_flying.PNG" , "sound":"overlay_fly_buzz_flying.wav" },' +
+'{ "image":"overlay_fly_buzz_flying.png" , "sound":"overlay_fly_buzz_flying.wav" },' +
 '{ "image":"overlay_wind_cold_howling_haunted.PNG" , "sound":"overlay_wind_cold_howling_haunted.wav" }' +
 ']}';
 
