@@ -25,13 +25,15 @@ let config = '{ "Weapons" : [' +
 '{ "image":"battle_For_The_Assault.png" , "sound":"battle_For_The_Assault.wav" },' +
 '{ "image":"battle_Night_Siege.png" , "sound":"battle_Night_Siege.wav" },' +
 '{ "image":"music_Adventurers_Road.png" , "sound":"music_Adventurers_Road.m4a" },' +
-'{ "image":"music_Country_Market.png" , "sound":"music_Country_Market.m4a" }' +
+'{ "image":"music_Country_Market.png" , "sound":"music_Country_Market.m4a" },' +
+'{ "image":"pause.png" , "sound":"" }' +
 '], '+
 '"Overlay" : [' +
 '{ "image":"overlay_rain.png" , "sound":"overlay_rain.wav" },' +
 '{ "image":"overlay_bird_crows.png" , "sound":"overlay_bird_crows.wav" },' +
 '{ "image":"overlay_fly_buzz_flying.png" , "sound":"overlay_fly_buzz_flying.wav" },' +
-'{ "image":"overlay_wind_cold_howling_haunted.png" , "sound":"overlay_wind_cold_howling_haunted.wav" }' +
+'{ "image":"overlay_wind_cold_howling_haunted.png" , "sound":"overlay_wind_cold_howling_haunted.wav" },' +
+'{ "image":"pause.png" , "sound":"" }' +
 ']}';
 
 
@@ -46,16 +48,30 @@ function playAudio(url) {
 
 function playMusik(url) {
     var x = document.getElementById("myAudio");
-    x.innerHTML = '<source src="' + url + '" type="audio/mpeg"> Your browser does not support the audio element.';
-    x.loop = true;
-    x.load();
+    if (x.innerHTML.includes(url))
+    {
+        x.pause();
+        x.innerHTML = '<source src="" type="audio/mpeg"> Your browser does not support the audio element.';
+    }
+    else{
+        x.innerHTML = '<source src="' + url + '" type="audio/mpeg"> Your browser does not support the audio element.';
+        x.loop = true;
+        x.load();
+    }
  }
 
  function playOverlay(url) {
     var x = document.getElementById("myAudioOverlay");
-    x.innerHTML = '<source src="' + url + '" type="audio/mpeg"> Your browser does not support the audio element.';
-    x.loop = true;
-    x.load();
+    if (x.innerHTML.includes(url))
+    {
+        x.pause();
+        x.innerHTML = '<source src="" type="audio/mpeg"> Your browser does not support the audio element.';
+    }
+    else{
+        x.innerHTML = '<source src="' + url + '" type="audio/mpeg"> Your browser does not support the audio element.';
+        x.loop = true;
+        x.load();
+    }
  }
 
  var x = document.getElementById("myAudio");
